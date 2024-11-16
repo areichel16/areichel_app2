@@ -122,7 +122,7 @@ if uploaded_file is not None:
     input['Predicted Traffic'] = [f"{x:.1f}" for x in prediction2]
     input['Lower Limit'] = [f"{x:.1f}" for x in non_negative]
     input['Upper Limit'] = [f"{x:.1f}" for x in upper_limits]
-    st.subheader(f"**Prediction Results with**: {(1-alpha)*100:.0f}% Prediction Interval")
+    st.subheader(f"**Prediction Results with** {(1-alpha)*100:.0f}% Prediction Interval")
     st.write(input)
 else:
     # Show the prediction on the app
